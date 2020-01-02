@@ -26,7 +26,7 @@ public class Datalog {
 	}
 
 	public boolean equals(Object o) {
-		if (arguments.length == 0 || predicate.toString() == null)
+		if (o == null)
 			return false;
 		if (o instanceof Datalog) {
 			return ((Datalog) o).predicate.equals(this.predicate)
